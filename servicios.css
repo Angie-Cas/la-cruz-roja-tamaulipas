@@ -1,0 +1,79 @@
+.servicios h2 {
+text-align: left;
+}
+
+.servicios p {
+margin-bottom: 30px;
+}
+
+/* SERVICE CONTAINER */
+
+.service-container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.service-type {
+border: 1px solid var(--cajas-border);
+padding: 20px 20px 30px 20px;
+width: 48%;
+margin-right: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+margin-bottom: 10px;
+}
+
+.service-type p {
+margin-bottom: 20px;
+}
+
+/* ACCORDION */
+
+.accordion-button {
+background-color: var(--gris);
+}
+
+.accordion-button:not(.collapsed) {
+background-color: var(--rojo);
+color: var(--blanco);
+}
+
+.accordion-collapse {
+background-color: var(--rojo);
+color: var(--blanco);
+}
+
+.accordion-button:focus {
+box-shadow: none;
+}
+
+.accordion-button.collapsed::after {
+background-image: url("../img/accordion-closed.png");
+}
+
+.accordion-button:not(.collapsed)::after {
+background-image: url("../img/accordion-open.png");
+}
+
+/* CITA */
+
+.cita {
+    background-color: var(--gris);
+    padding: 40px 10px 60px 10px;
+    margin-bottom: 0;
+}
+
+.cita {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 680px) {
+    .service-container {
+        flex-direction: column;
+        }
+    .service-type {
+        width: 100%;
+        margin-right: 0;
+    }
+  }
