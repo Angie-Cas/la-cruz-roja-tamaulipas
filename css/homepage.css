@@ -551,7 +551,7 @@ header .primary-btn {
 }
 
 .boletin input[type=submit] {
-    background-image: url(/img/mail-submit.jpg);
+    background-image: url(../img/mail-submit.jpg);
     height: 50px;
     width: 70px;
     border: 0;
@@ -560,7 +560,7 @@ header .primary-btn {
 }
 
 .boletin input[type=submit]:hover {
-    background-image: url(/img/mail-submit-hover.jpg);
+    background-image: url(../img/mail-submit-hover.jpg);
 }
 
 .aplicacion-boletin hr {
