@@ -1,0 +1,136 @@
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-container > p {
+    text-align: center;
+}
+
+/* HEADER */
+.headercarousel .overlay-image::after {
+    background: linear-gradient(0deg, rgba(0,0,0,.5) 10%, rgba(0,0,0,0.2) 100%);
+}
+
+.en, .en .container {
+    height: 350px;
+}
+
+.en .container {
+    padding-top: 50px;
+}
+
+.en h1 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.en a {
+    font-size: 16px;
+}
+
+/* CAROUSEL EVENTOS */
+
+.owl-carousel.eventos {
+    margin-top: 20px;
+    padding-right: 1px;
+}
+
+.owl-carousel.eventos .item {
+    border: 1px solid var(--cajas-border);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 350px;
+    transition: all 0.5s;
+}
+
+.owl-carousel.eventos .item:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 1px;
+}
+
+.owl-carousel.eventos .item-img img {
+    height: 100%;
+    box-shadow: none;
+    object-fit: cover;
+}
+
+.owl-carousel.eventos .item-info {
+    padding: 15px;
+}
+
+.owl-carousel.eventos .info {
+    display: flex;
+}
+
+.owl-carousel.eventos .info img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.owl-carousel .owl-nav {
+    margin-top: 20px;
+}
+
+.owl-carousel .owl-dots {
+    display: none;
+}
+
+.secondary-btn {
+    margin-top: 20px;
+}
+
+.btn-eventos {
+    margin-top: 30px;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 690px) {
+    .en .container {
+        padding-top: 30px;
+    }
+
+    .en h1 {
+        line-height: 40px;
+    }
+    .owl-carousel.eventos .item-img {
+        height: 56%;
+    }
+}
+
+@media (max-width: 600px) {
+    .owl-carousel.eventos .item {
+        height: auto;
+    }
+
+    .owl-carousel.eventos .item-info {
+        padding: 15px 20px 30px 20px;
+    }
+
+    .owl-carousel.eventos .item-info h3 {
+        height: auto;
+    }
+}
+
+@media (max-width: 460px) {
+    .en h1 {
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .en .container {
+        padding-top: 25px;
+    }
+
+    .en h1 {
+        line-height: 35px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .en .container .date {
+        justify-content: center;
+    }
+}

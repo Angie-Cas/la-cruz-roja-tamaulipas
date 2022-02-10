@@ -1,38 +1,3 @@
-/* ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ HEADER ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ */
-
-header {
-    height: 500px;
-    width: 100%;
-    background-color: var(--gris);
-    margin-bottom: 50px;
-}
-
-header .carousel, header .carousel img {
-    height: 500px;
-    object-fit: cover;
-    z-index: 98;
-}
-
-header .carousel-item {
-    display: flex !important;
-    justify-content: center;
-}
-
-header .carousel-item-container {
-    position: absolute;
-    top: 150px;
-    z-index: 98;
-    width: 1000px;
-}
-
-header .carousel-item-container h1 {
-    max-width: 700px; 
-}
-
-header .primary-btn {
-    margin-top: 10px;
-}
-
 /* ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ SERVICIOS ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ */
 
 .servicios .section-container {
@@ -59,8 +24,8 @@ header .primary-btn {
     background-color: grey;
     margin-right: 10px;
     border-radius: 0;
-    border: none;
     box-shadow: var(--sombra);
+    border: 1px solid var(--cajas-border);
 }
 
 .servicios .cards div:last-child {
@@ -82,8 +47,7 @@ header .primary-btn {
 }
 
 .servicios .card img:hover {
-    outline: 2px solid var(--rojo);
-    outline-offset: -2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 1px;
 }
 
 
@@ -180,7 +144,7 @@ header .primary-btn {
     grid-template-columns: repeat(3,1fr);
     grid-auto-rows: 133px;
     grid-gap: 5px;
-    width: 86%;
+    width: 90%;
     margin: auto;
 }
 
@@ -188,6 +152,7 @@ header .primary-btn {
     background: grey;
     position: relative;
     box-shadow: var(--sombra);
+    border: 1px solid var(--cajas-border);
 }
 
 .gallery-item:nth-child(1) {
@@ -231,8 +196,7 @@ header .primary-btn {
 }
 
 .img-container:hover {
-    outline: 2px solid var(--rojo);
-    outline-offset: -2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 1px;
 }
 
 .gallery-item .label {
@@ -244,61 +208,6 @@ header .primary-btn {
 .gallery-item .label p {
     color: var(--blanco);
     font-size: 20px;
-}
-
-/* ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ EVENTOS Y NOTICIAS ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ */
-
-.carousel-smallcreen {
-    display: none;
-}
-
-.eventos-y-noticias h2 {
-    margin-bottom: 40px;
-}
-
-.eventos-y-noticias .carousel-item {
-    padding-left: 5%;
-}
-
-.eventos-y-noticias .card {
-    width: 30%;
-    overflow: hidden;
-    height: 390px;
-    margin-left: 10px;
-    border-radius: 0;
-    border: 0;
-}
-
-.eventos-y-noticias .card img {
-    width: 110%;
-    height: 60%;
-    object-fit: cover;
-    box-shadow: var(--sombra);
-}
-
-.eventos-y-noticias .card a {
-    text-decoration: none;
-}
-
-.eventos-y-noticias .card h4 {
-    margin: 15px 0px 0px 0px;
-    transition: all 0.5s;
-}
-
-.eventos-y-noticias .card hr {
-    width: 20%;
-}
-
-.eventos-y-noticias .card a h4:hover {
-    color: var(--rojo);
-}
-
-.eventos-y-noticias .carousel-control-prev, .eventos-y-noticias .carousel-control-next {
-    width: 25px; 
-}
-
-.eventos-y-noticias .carousel-control-prev img, .eventos-y-noticias .carousel-control-next img {
-    width: 100%;
 }
 
 /* ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ APLICACION Y BOLETIN ⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙⁙ */
@@ -313,7 +222,7 @@ header .primary-btn {
     background-color: var(--gris);
     display: flex;
     justify-content: center;
-    padding: 40px 40px 0px 40px;
+    padding: 40px 40px 10px 40px;
 }
 
 .aplicacion {
@@ -340,6 +249,11 @@ header .primary-btn {
 
 .app-info {
     width: 50%;
+    transition: all 0.5s;
+}
+
+.app-info a {
+    transition: all 0.5s;
 }
 
 .app-info a:hover {
@@ -386,7 +300,7 @@ header .primary-btn {
 }
 
 .boletin input[type=submit] {
-    background-image: url(/img/mail-submit.jpg);
+    background-image: url(../img/mail-submit.jpg);
     height: 50px;
     width: 70px;
     border: 0;
@@ -395,7 +309,7 @@ header .primary-btn {
 }
 
 .boletin input[type=submit]:hover {
-    background-image: url(/img/mail-submit-hover.jpg);
+    background-image: url(../img/mail-submit-hover.jpg);
 }
 
 .aplicacion-boletin hr {
@@ -660,7 +574,7 @@ header .primary-btn {
     .donativos p {
         width: 100%;
         text-align: center;
-        text-shadow: 4px 4px 20px rgba(150, 150, 150, 1);
+        /* text-shadow: 4px 4px 20px rgba(150, 150, 150, 1); */
     }
     
 }
@@ -668,10 +582,6 @@ header .primary-btn {
 @media (max-width: 415px) {
     .donativos {
         height: 400px;
-    }
-
-    .donativos .section-container {
-        margin-top: 30px;
     }
 
     .eventos-y-noticias .card img {

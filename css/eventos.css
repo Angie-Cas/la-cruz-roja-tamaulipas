@@ -1,0 +1,144 @@
+.breadcrumb {
+    margin-top: 40px;
+}
+
+.section-container h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.events-container {
+    /* height: 900px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.pagination-block {
+    width: 32.3%;
+    padding-bottom: 10px;
+    margin: 0 1% 1% 0;
+    border:1px solid var(--cajas-border);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.pb-img {
+    height: 250px;
+}
+
+.pb-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pb-info {
+    padding: 15px;
+}
+
+.pb-info h3 {
+    color: var(--texto2);
+}
+
+.pb-info .info {
+    display: flex;
+    align-items: center;
+}
+
+.pb-info .info img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.pb-info .info p {
+    margin-bottom: 0;
+}
+
+.pb-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pb-info a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--rojo);
+    transition: all 0.5s;
+}
+
+.pb-info a:hover {
+    color: var(--hover-btn-rojo);
+    filter: brightness(0.9);
+}
+
+.pb-info a img {
+    width: 10px;
+    margin-left: 3px;
+}
+
+/* BUTTONS */
+
+.smpPagination--pagination-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.smpPagination--pagination, .smpPagination--pagination-counter {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--cajas-border);
+    background: white;
+    outline: 0;
+    margin-right: 5px;
+    font-size: 20px;
+    color: var(--texto2);
+    transition: all 0.5s;
+    padding-top: 3px;
+}
+
+.smpPagination--pagination:hover {
+    background: var(--rojo);
+    color: white;
+}
+
+.smpPagination--pagination.prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: OCRAStd;
+}
+
+.smpPagination--pagination-counter {
+    width: 70px;
+    text-align: center;
+
+}
+
+.smpPagination--pagination.next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: OCRAStd;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 850px) {
+    .pagination-block {
+        width: 49%;
+    }
+}
+
+@media (max-width: 600px) {
+    .events-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .pagination-block {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

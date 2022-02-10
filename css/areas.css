@@ -1,0 +1,116 @@
+.breadcrumb {
+    margin-top: 30px;
+}
+
+.section-container h2 {
+    text-align: left;
+}
+
+.section-container p:first-of-type {
+    margin-bottom: 30px;
+}
+
+.areas-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area {
+    border: 1px solid var(--cajas-border);
+    position: relative;
+    width: 49%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.area:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 1px;
+}
+
+.area-img {
+    height: 200px;
+    position: relative;
+}
+
+.area-img::before {
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.area-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.titulo {
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.titulo h3 {
+    color: var(--blanco);
+}
+
+.area-desc p {
+    padding: 20px;
+    height: 152px;
+}
+
+.area-btn {
+    height: 45px;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.area-btn a {
+    color: var(--blanco);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.area-btn:hover {
+    background-color: var(--hover-btn-rojo);
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 925px) {
+    .area-desc p {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 790px) {
+    .area {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .area-desc p {
+        height: auto;
+    }
+
+    #area-juventud p {
+        height: auto;
+    }
+}

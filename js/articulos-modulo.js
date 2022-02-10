@@ -1,0 +1,2 @@
+const modulo = document.getElementsByClassName("lee-mas-articulos")[0];
+modulo.innerHTML = '<li><a href="#">Día del Voluntario</a></li> <li><a href="#">Convocatoria Servicio Social</a></li> <li><a href="#">6a. Edición Carrera Atlética Corre, Camina y Salva una Vida</a></li> <li><a href="#">Convocatoria Servicio Social</a></li> <li><a href="#">Entrega de Productos de Limpieza y Pañales para Adultos Mayores</a></li>';

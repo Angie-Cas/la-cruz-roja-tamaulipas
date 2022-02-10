@@ -1,0 +1,46 @@
+.int-area-desc h2 {
+    margin-bottom: 0;
+}
+.primary-btn {
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
+}
+
+.primary-btn img {
+    width: 17px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.fg-gallery {
+    display: flex;
+    margin-top: 30px;
+}
+
+.gallery-items {
+    width: 32.3%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    height: 100%;
+    object-fit: cover;
+    border: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.fg-gallery img:last-child {
+    margin-right: 0;
+}
+
+/* GALLERY MEDIA QUERIES*/
+
+@media (max-width: 400px) {
+    .fg-gallery {
+        margin-top: 20px;
+    }
+
+    .gallery-items{
+        width: 49%;
+    }
+}

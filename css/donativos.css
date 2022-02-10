@@ -2,12 +2,17 @@
     text-align: left;
 }
 
+.options p {
+    margin-bottom: 30px;
+}
+
 /* OPTIONS */
 
 .options-container {
     display: flex;
     flex-wrap: wrap;
-    }
+    margin-bottom: 30px;
+}
     
 .option-type {
     border: 1px solid var(--cajas-border);
@@ -27,33 +32,275 @@
 
 .mail {
     width: 58%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.desc {
+    text-align: left;
 }
 
 /* ACCOUNTS */
 
+.account h4 span {
+    position: relative;
+}
+
 .account-container h4 span {
-    background-color: var(--texto2);
+    background-color: var(--rojo);
     color: var(--blanco);
-    padding-left: 5px;
+    padding-left: 5.5px;
     border-radius: 10px;
-    width: 20px;
+    width: 75px;
     height: 20px;
     display: inline-block;
     font-size: 16px;
-    margin-top: 10px;
+    top: -2px;
 }
 
 .account {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .detail {
     background-color: var(--gris);
     padding: 15px;
+    /* margin-bottom: 5px; */
 }
 
 .detail span {
-    color: var(--rojo);
+    color: var(--texto);
     font-weight: bold;
     background-color: var(--gris);
+}
+
+/* ENTREGAS */
+
+.mail h3 {
+    text-align: left;
+}
+
+/* FORM */
+
+input, textarea {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: var(--texto2);
+    border: 1px solid var(--texto2);
+}
+
+#ciudad {
+    width: 49%;
+    margin-right: 5px;
+}
+
+#postal {
+    width: 49.3%;
+}
+
+#indicaciones {
+    line-height: 20px;
+}
+
+#enviar {
+    padding: 5px 20px;
+    background-color: var(--rojo);
+    border-radius: 30px;
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
+    width: 100px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#enviar:hover {
+    background-color: var(--hover-btn-rojo);
+    color: var(--blanco);
+}
+
+.mail a {
+    text-decoration: none;
+    color: var(--texto2);
+    margin-bottom: 10px;
+}
+
+.mail a:hover {
+    color: var(--texto);
+    text-decoration: underline;
+}
+
+/* OPTIONS & FORM MEDIA QUERIES */
+
+@media (max-width: 1027px) {
+    .option-type {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #ciudad, #postal {
+        width: 100%;
+    }
+}
+
+/* CAROUSEL */
+
+.carousel-x {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position: relative;
+    height: 400px;
+    overflow-y: hidden;
+    border: 1px solid var(--gris);
+}
+
+.carousel-nav {
+    position: absolute;
+    right: 0;
+    margin-top: 170px;
+    padding-right: 30px;
+    z-index: 99;
+}
+
+.carousel-nav div {
+    width: 10px;
+    height: 10px;
+    background-color: var(--blanco);
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.carousel-nav div:hover {
+    background-color: var(--rojo);
+    cursor: pointer;
+}
+
+#carousel-x-inner {
+    transition: all 0.5s;
+}
+
+.carousel-item-x {
+    height: 400px;
+    display: flex;
+}
+
+.item-desc, .item-img {
+    width: 50%;
+}
+
+.item-desc {
+    padding: 20px 0px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-desc p {
+    margin: 0;
+}
+
+.item-img {
+    position: relative;
+}
+
+.item-img::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-desc h2 {
+    color: var(--texto2);
+}
+
+/* CAROUSEL MEDIA QUERIES */ 
+
+@media (max-width: 650px) {
+    .carousel-item-x {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-img::after {
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    }
+
+    .carousel-item-x h2 {
+        text-align: center;
+    }
+    
+    .carousel-nav {
+        bottom: 0;
+        display: flex;
+        margin-right: 40%;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .carousel-nav div {
+        margin-right: 10px;
+    }
+
+    .item-desc, .item-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .item-desc {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .item-desc p {
+        height: 100px;
+        overflow-y: scroll;
+    }
+
+    .item-desc p::-webkit-scrollbar {
+        width: 2px;
+      }
+    
+    .item-desc p::-webkit-scrollbar-track {
+        background: var(--blanco);
+      }
+
+    .item-desc p::-webkit-scrollbar-thumb {
+        background: var(--rojo);
+      }
+
+      .item-desc h2 {
+        font-size: 24px;
+    }
+      
+}
+
+@media (max-width: 400px) {
+    .carousel-nav {
+        margin-right: 40%;
+    }
+}
+
+@media (max-width: 320px) {
+    .item-desc {
+        padding: 10px 15px 0px 15px;
+    }
 }

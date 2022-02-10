@@ -1,0 +1,246 @@
+.breadcrumb {
+    margin-top: 40px;
+}
+
+.section-container h2 {
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.noticias-container {
+    width: 70%;
+}
+
+.pagination-block {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid var(--cajas-border);
+    text-decoration: none;
+}
+
+.pb-img {
+    width: 220px;
+    height: 220px;
+}
+
+.pb-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pb-info {
+    padding: 0 0 0 15px;
+    width: 50%;
+}
+
+.pb-info h3 {
+    color: var(--texto2);
+}
+
+.pb-info .desc {
+    display: flex;
+    align-items: center;
+}
+
+.pb-info .desc p {
+    margin-bottom: 0;
+    height: 110px;
+    overflow: hidden;
+}
+
+.pb-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pb-info a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--rojo);
+    transition: all 0.5s;
+}
+
+.pb-info a:hover {
+    color: var(--hover-btn-rojo);
+    filter: brightness(0.9);
+}
+
+.pb-info a img {
+    width: 15px;
+    margin-left: 3px;
+}
+
+/* BUTTONS */
+
+.smpPagination--pagination-nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.smpPagination--pagination, .smpPagination--pagination-counter {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--cajas-border);
+    background: white;
+    outline: 0;
+    margin-right: 5px;
+    font-size: 20px;
+    color: var(--texto2);
+    transition: all 0.5s;
+    padding-top: 3px;
+}
+
+.smpPagination--pagination:hover {
+    background: var(--rojo);
+    color: white;
+}
+
+.smpPagination--pagination.prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: OCRAStd;
+}
+
+.smpPagination--pagination-counter {
+    width: 70px;
+    text-align: center;
+
+}
+
+.smpPagination--pagination.next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: OCRAStd;
+}
+
+/* SIDEBAR */
+
+.noticias-sidebar-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 29%;
+    margin-left: 1%;
+}
+
+.module {
+    border: 1px solid var(--cajas-border);
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.module.eventos {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.module.eventos h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.module.eventos a {
+    width: 150px;
+    font-size: 16px;
+}
+
+.module.buletin {
+    padding: 20px;
+    background-color: var(--gris);
+}
+
+.module.buletin p {
+    margin-top: 10px;
+}
+
+.module.buletin input[type="email"] {
+    width: 100%;
+    border: 0;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.module.buletin input[type="submit"] {
+    background: var(--rojo);
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    padding: 5px 15px 5px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 33%;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.module.buletin input[type="submit"]:hover {
+    background: var(--hover-btn-rojo);
+}
+
+.module.donaciones {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.module.donaciones h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.module.donaciones a {
+    width: 150px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 860px) {
+    .noticias-sidebar-container {
+        flex-direction: column;
+    }
+
+    .noticias-container {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .pb-img {
+    display: none;
+    }
+
+    .pb-info {
+        width: 100%;
+        padding: 0;
+    }
+
+    .pagination-block {
+        margin: 0 0 40px 0;
+        padding: 0 0 40px 0;
+    }
+}
