@@ -91,6 +91,7 @@ section {
 
 .section-container {
     width: 1000px;
+    overflow: hidden;
 }
 
 section h2 {
