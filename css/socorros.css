@@ -85,7 +85,7 @@
     }
 
     .int-area-desc, .int-area-sidebar {
-        width: 100%;
+        width: auto;
     }
 
     .sidebar-module-separator {
