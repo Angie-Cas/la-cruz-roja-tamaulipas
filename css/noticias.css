@@ -240,7 +240,8 @@ h2 {
 
 @media (max-width: 600px) {
     .pb-img {
-    display: none;
+    width: 100%;
+    margin-bottom: 20px;
     }
 
     .pb-info {
@@ -251,5 +252,6 @@ h2 {
     .pagination-block {
         margin: 0 0 40px 0;
         padding: 0 0 40px 0;
+        flex-direction: column;
     }
 }
