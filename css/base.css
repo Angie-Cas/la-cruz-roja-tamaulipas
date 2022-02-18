@@ -241,6 +241,17 @@ footer .col-1 {
 
 footer .col-2 {
     width: 30%;
+    display: flex;
+    align-content: flex-start;
+    position: relative;
+}
+
+footer .col-2 h4 {
+    position: absolute;
+}
+
+footer .col-2 ul {
+    margin-top: 48.8px;
 }
 
 footer .col-3 {
@@ -348,10 +359,19 @@ footer img {
     footer .contact ul {
         display: block;
         margin-left: 0;
+        margin-bottom: 0;
     }
 
     footer {
         padding-bottom: 30px;
+    }
+
+    footer .col-2 {
+        flex-direction: column;
+    }
+
+    footer .col-2 .column-2 {
+        margin-top: 0;
     }
 
     .dropdown-menu {
