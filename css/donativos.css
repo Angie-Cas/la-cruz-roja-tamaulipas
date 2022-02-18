@@ -48,7 +48,7 @@
 }
 
 .account-container h4 span {
-    background-color: var(--rojo);
+    background-color: var(--texto2);
     color: var(--blanco);
     padding-left: 5.5px;
     border-radius: 10px;

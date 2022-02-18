@@ -146,6 +146,7 @@
     grid-gap: 5px;
     width: 90%;
     margin: auto;
+    padding-bottom: 15px;
 }
 
 .gallery-item {
@@ -196,7 +197,7 @@
 }
 
 .img-container:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 1px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .gallery-item .label {

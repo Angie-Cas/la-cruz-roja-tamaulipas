@@ -1,4 +1,4 @@
-.breadcrumb {
+h2 {
     margin-top: 40px;
 }
 
@@ -37,6 +37,11 @@
 
 .pb-info h3 {
     color: var(--texto2);
+    height: 50px;
+}
+
+.pb-info h3:hover {
+    text-decoration: underline;
 }
 
 .pb-info .info {
@@ -55,7 +60,7 @@
 
 .pb-link {
     margin-top: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .pb-info a {
@@ -140,5 +145,9 @@
     .pagination-block {
         width: 100%;
         margin-bottom: 10px;
+    }
+
+    .pb-info h3 {
+        height: auto;
     }
 }

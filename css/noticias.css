@@ -1,4 +1,4 @@
-.breadcrumb {
+h2 {
     margin-top: 40px;
 }
 
@@ -38,7 +38,11 @@
 }
 
 .pb-info h3 {
-    color: var(--texto2);
+    color: var(--texto);
+}
+
+.pb-info h3:hover {
+    text-decoration: underline;
 }
 
 .pb-info .desc {
@@ -51,6 +55,11 @@
     height: 110px;
     overflow: hidden;
 }
+
+.pb-info .info p {
+    font-size: 14px;
+}
+
 
 .pb-link {
     margin-top: 20px;

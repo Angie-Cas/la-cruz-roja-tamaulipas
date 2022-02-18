@@ -70,7 +70,7 @@ p {
     border-radius: 30px;
     color: var(--rojo);
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 20px;
     transition: all 0.5s;
     border: 3px solid var(--rojo);
@@ -405,7 +405,7 @@ footer img {
 
 .int-area-desc {
     width: 65%;
-    height: 100%;
+    height: auto;
     padding: 0px 20px 0px 0px;
 }
 
@@ -704,6 +704,10 @@ footer img {
     max-width: 300px;
     height: 48px;
     overflow-y: hidden;
+}
+
+.owl-carousel .item-info h3:hover {
+    text-decoration: underline;
 }
 
 .owl-carousel .item-info hr {
