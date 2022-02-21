@@ -16,6 +16,10 @@ section {
     width: 45%;
 }
 
+.inicios-container h2 {
+    font-size: 26px;
+}
+
 .inicios {
     margin-right: 5%;
 }
@@ -25,11 +29,12 @@ section {
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 
 .principios-container h2 {
     margin-bottom: 30px;
+    font-size: 26px;
 }
 
 #principios-carousel {
@@ -70,6 +75,7 @@ section {
 
 .carousel-indicators {
     justify-content: left;
+    height: 20px;
 }
 
 .carousel-indicators ul {
@@ -80,7 +86,7 @@ section {
     width: 110%;
     padding: 0;
     justify-content: center;
-    top: 40px;
+    top: 60px;
     left: -5%;
 }
 
@@ -177,7 +183,7 @@ section {
 
 @media (max-width: 800px) {
     .principios-container {
-        padding-bottom: 120px;
+        padding-bottom: 150px;
     }
 
     .carousel-item {
@@ -219,9 +225,14 @@ section {
         height: auto;
     }
 
+    .carousel-indicators {
+        height: 50px;
+    }
+
     .carousel-indicators ul {
         width: 150%;
         left: -25%;
+        top: 80px;
     }
 }
 
@@ -255,7 +266,7 @@ section {
     }
 
     .principios-container {
-        padding-bottom: 140px;
+        padding-bottom: 150px;
     }
 }
 

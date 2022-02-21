@@ -8,7 +8,7 @@ h2 {
     font-size: 40px;
 }
 
-.noticias-container {
+.noticias-pagination-container {
     width: 70%;
 }
 
@@ -58,6 +58,7 @@ h2 {
 
 .pb-info .info p {
     font-size: 14px;
+    color: #a1a1a1;
 }
 
 
@@ -87,14 +88,14 @@ h2 {
 
 /* BUTTONS */
 
-.smpPagination--pagination-nav {
+.pagination-buttons {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 30px;
 }
 
-.smpPagination--pagination, .smpPagination--pagination-counter {
+.pagination-buttons a {
     display: block;
     width: 40px;
     height: 40px;
@@ -106,27 +107,25 @@ h2 {
     color: var(--texto2);
     transition: all 0.5s;
     padding-top: 3px;
+    text-align: center;
+    text-decoration: none;
 }
 
-.smpPagination--pagination:hover {
+.pagination-buttons a:hover {
     background: var(--rojo);
     color: white;
 }
 
-.smpPagination--pagination.prev {
+.pagination-buttons .prev {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     font-family: OCRAStd;
+    padding-top: 6px;
 }
 
-.smpPagination--pagination-counter {
-    width: 70px;
-    text-align: center;
-
-}
-
-.smpPagination--pagination.next {
+.pagination-buttons .next {
     border-top-right-radius: 20px;
+    padding-top: 6px;
     border-bottom-right-radius: 20px;
     font-family: OCRAStd;
 }
@@ -229,7 +228,7 @@ h2 {
         flex-direction: column;
     }
 
-    .noticias-container {
+    .noticias-pagination-container {
         width: 100%;
     }
 

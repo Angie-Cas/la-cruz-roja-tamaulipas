@@ -56,6 +56,7 @@ p {
     font-weight: bold;
     font-size: 20px;
     transition: all 0.5s;
+    position: relative;
 }
 
 .primary-btn:hover {
@@ -132,8 +133,9 @@ h4 {
 
 .navbar {
     padding: 10px;
-    box-shadow: var(--sombra);
+    /* box-shadow: var(--sombra); */
     background-color: white;
+    border-bottom: 1px solid var(--cajas-border);
 }
 
 .navbar .container-fluid {
@@ -295,8 +297,8 @@ footer a {
 }
 
 footer a:hover {
-    color: #dedede;
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
 }
 
 .column-2 {
@@ -331,8 +333,10 @@ footer img {
     color: var(--blanco);
 }
 
-.copyright .col-2 a {
-    text-decoration: underline;
+.copyright .col-2 a img {
+    width: 12px;
+    height: 12px;
+    margin: 0px 2px 2px 5px;
 }
 
 .copyright .col-3 a:hover {

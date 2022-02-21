@@ -135,6 +135,10 @@ input, textarea {
     text-decoration: underline;
 }
 
+form input:focus, form textarea:focus {
+    outline: 0;
+}
+
 /* OPTIONS & FORM MEDIA QUERIES */
 
 @media (max-width: 1027px) {

@@ -4,6 +4,7 @@
 
 .section-container h2 {
     text-align: left;
+    margin-top: 40px;
 }
 
 .section-container p:first-of-type {
@@ -22,12 +23,14 @@
     margin-right: 1%;
     margin-bottom: 1%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    transition: all 0.5s;
+    transition: all 0.1s;
     text-decoration: none;
 }
 
 .area:hover {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px 1px; */
+    outline: 1px solid var(--rojo);
+    outline-offset: -1px;
 }
 
 .area-img {
